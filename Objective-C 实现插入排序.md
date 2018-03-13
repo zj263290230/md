@@ -17,6 +17,9 @@
 ## Objective-C 实现
 ```
 - (void)insertSort:(NSMutableArray *)array {
+    if (!array.count)
+		return;
+		
     for (int i = 0; i < array.count; i++) {
         for (int j = i; j > 0; j--) {
             if (array[j] < array[j - 1]) {
